@@ -120,7 +120,7 @@ _by Leonardo De La Rosa_
   * In the repository's sidebar on the right side, click on settings.
   * Scroll down to **Danger Zone** and click on _Delete this repository_. 
   * Read the warning, type in the name of the repo, and click **I understand the consequences,delete this repository**.  
-###Forking v. Cloning  
+### Forking v. Cloning  
 * If you were to accidentally delete a repo in git, you can take a copy of it from github with cloning by:  
  * Going to the main page of the repo in Github.
  * Look for the SSH clone URL below the right side bar and copy it. 
