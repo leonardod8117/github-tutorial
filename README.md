@@ -132,7 +132,7 @@ _by Leonardo De La Rosa_
     the top-right of the page. By forking this repo, you are making a personal copy of it that you can  
     make changes to.  
   * After forking the repo, go to the main page of your personal copy of the repo and copy the SSH clone URL  
-    below thr right sidebar.  
+    below the right sidebar.  
   * Go to git and type in the command `git clone SSH clone url here` and you now have the forked repo in git.  
 
 * If you wish to offer the changes you made in your personal copy of the forked repo to the owner of the original  
@@ -140,6 +140,6 @@ _by Leonardo De La Rosa_
   * Go to the main page of your forked copy of the repo in Github. 
   * Click the green button in the top left of the page, next to the branch button. 
   * A new page will open and you will see a button that reads "create pull request". Click the green button. 
-  * You are given the option too write a comment and ince you are done, click "create pull request" below the text box. 
+  * You are given the option too write a comment and once you are done, click "create pull request" below the text box. 
 
   
