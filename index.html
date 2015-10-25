@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>GitHub-tutorial by leonardod8117</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>GitHub-tutorial</h1>
+        <p>Gitting A Grip On Github</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/leonardod8117/github-tutorial" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/leonardod8117/github-tutorial/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/leonardod8117/github-tutorial/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by Leonardo De La Rosa</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<h3>
+<a id="git" class="anchor" href="#git" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git</h3>
+
+<ul>
+<li><p>Git has "version control", which means it manages multiple versions of a file<br>
+by allowing you to take "snapshots" of code.  </p></li>
+<li><p>Also, Git does not require Github.  </p></li>
+</ul>
+
+<h3>
+<a id="github" class="anchor" href="#github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Github</h3>
+
+<ul>
+<li><p>Github requires Git because it serves to store code generated in Git in the cloud.</p></li>
+<li><p>It visually tracks changes so when ever changes are made in a file you can view those<br>
+changes in Github.  </p></li>
+<li><p>Files in Github are easily collaborated because they are public so anyone can view<br>
+them and suggest or make changes to them. </p></li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<ul>
+<li>
+<p>To begin using Git and Github you should start by creating a Github account.  </p>
+
+<ul>
+<li>Go to <a href="github.com">Github.com</a> and sign up for free.<br>
+</li>
+</ul>
+</li>
+<li>
+<p>After signing up for Github you need to link your Github account with your Intergrated<br>
+Development Environment or <strong>IDE</strong> from the platform you are using.  </p>
+
+<ul>
+<li>In github, click on your account icon in the top right hand corner.</li>
+<li>Go to settings and click on <em>SSH Keys</em> then go to the platform the <strong>IDE</strong> is on<br>
+and go to settings.<br>
+</li>
+<li>Obtain the <em>SSH key</em> in the settings and copy it.</li>
+<li>Then return to github, click on add <em>SSH key</em> and paste.<br>
+</li>
+</ul>
+</li>
+<li>
+<p>After connecting your Github account and your IDE, you should open your IDE and see<br>
+the following: <code>ssh -T git@github.com(yes/no)</code>  </p>
+
+<ul>
+<li>Type in yes and you have successfully connected your IDE with your Github. </li>
+</ul>
+</li>
+<li>
+<p>In order to receive credit for your work, you must use the command <code>git config --global user.name  
+"first name last name"</code> and <code>git config --global user.email "email"</code>. When you enter these commands individually, they should look like this:  </p>
+
+<ul>
+<li>
+<code>git config --global user.name "Leonardo De La Rosa"</code><br>
+<code>git config --global user.email "anderosa8@gmail.com"</code> </li>
+</ul>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<ul>
+<li>
+<p>To begin using Git you must do the following:  </p>
+
+<ul>
+<li>Go to your directory(folder) of files.<br>
+</li>
+<li>Intialize Git using the command <code>git init</code>, which gives you version control<br>
+and creates a repository(where files are kept and changes are tracked).</li>
+</ul>
+</li>
+<li>
+<p>After you have created a file in a repository and have made changes, you<br>
+should save it by doing the following:  </p>
+
+<ul>
+<li>In the repository the file is located, type in the command<br>
+<code>git add {name of file}</code> to add the file in the repository to the stage.<br>
+</li>
+<li>Then type in the command <code>git commit -m ""</code> and write a message<br>
+between the quotes about the changes you have made in the file. </li>
+</ul>
+</li>
+<li>
+<p>In order to see the repository and the files within it on Github you should do the following:  </p>
+
+<ul>
+<li>you must go to Github and click on the plus icon in the top-right hand corner and click on new repository.</li>
+<li>In the space provided, type the name of your repository in git and then click create repository. </li>
+</ul>
+</li>
+<li>
+<p>You will then be brought to a page where you are given instructions on how to setup a<br>
+connection between the external repository(remote) in Github with the one in Git and<br>
+you are provided with an SSH link to the repository.To make the connection you should<br>
+copy and paste these two commands in git:  </p>
+
+<ul>
+<li>
+<code>git remote add origin SSH link here</code>  and  <code>git push -u origin master</code>.<br>
+</li>
+</ul>
+</li>
+<li><p>After doing the previous step, you should refresh your page and be able to see the changes you made in your repository on Github.</p></li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<h3>
+<a id="basic-workflow" class="anchor" href="#basic-workflow" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic Workflow</h3>
+
+<ul>
+<li>Whenever you make any changes to a file in a repository on git, you should:<br>
+
+<ul>
+<li> Use the command <code>git add file name</code> to put the file on the stage.</li>
+<li> Then type in the command <code>git status</code> to see if the file you made<br>
+changes to is on the stage.<br>
+</li>
+<li>Type the command <code>git commit -m ""</code> and write a message regarding<br>
+the changes you have made in the file.<br>
+</li>
+<li>Type in the command <code>git push</code> (Note: you do not have to type in<br>
+<code>-u origin master</code> because when you did so the first time, you were<br>
+commanding Git to remember the remote you entered previously).<br>
+</li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="commands" class="anchor" href="#commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Commands</h3>
+
+<ul>
+<li>
+<p>The Git commands you should know are as follows:</p>
+
+<ol>
+<li><p><code>git init</code>: initializes git in the directory you are currently in.  </p></li>
+<li><p><code>git add file.ext</code>: adds file to stage to be committed. </p></li>
+<li><p><code>git commit -m "short-specific message"</code>: takes a 'snapshot' of files<br>
+on the stage. The message should be short and describe what changes
+were made to the file.  </p></li>
+<li><p><code>git status</code>: tells you which files were placed on the stage.(It will be green) </p></li>
+<li><p><code>git remote add origin SSH link here</code>: This creates a connection between a<br>
+repository in git and an external repository in Github.  </p></li>
+<li><p><code>git push</code>: sends any changes made in a repository in Git to an external repository you made in Github.  </p></li>
+<li><p><code>git help</code>: this will list commonly used commands in git.  </p></li>
+<li><p><code>git log</code>: use this to see a list of all your past commits. </p></li>
+<li><p><code>git diff</code>: shows you the difference between your current code and the last 'snapshot' of your code.  </p></li>
+</ol>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="error-handling" class="anchor" href="#error-handling" aria-hidden="true"><span class="octicon octicon-link"></span></a>Error Handling</h2>
+
+<ul>
+<li>
+<p>If you intialized Git in the wrong directory, don't fear and follow the directions listed here:  </p>
+
+<ul>
+<li>Go to the directory you intialized git in and type in <code>rm -rf .git</code> and press<br>
+enter.This should "un-init" git so you can initialize git in the correct directory.<br>
+</li>
+</ul>
+</li>
+<li>
+<p>To remove a repository in Git you should:  </p>
+
+<ul>
+<li> Be in the directory that the repository is located in.</li>
+<li> In this directory, type in the command "rm -rf name of repo" to remove the repo forcefully.<br>
+</li>
+</ul>
+</li>
+<li>
+<p>To remove a repository in Github you should:  </p>
+
+<ul>
+<li>Go to the repository's main page on Github. </li>
+<li>In the repository's sidebar on the right side, click on settings.</li>
+<li>Scroll down to <strong>Danger Zone</strong> and click on <em>Delete this repository</em>. </li>
+<li>Read the warning, type in the name of the repo, and click <strong>I understand the consequences,delete this repository</strong>.<br>
+</li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="forking--cloning" class="anchor" href="#forking--cloning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Forking &amp; Cloning</h3>
+
+<ul>
+<li>
+<p>If you were to accidentally delete a repo in git, you can take a copy of<br>
+it from GitHub with cloning by:  </p>
+
+<ul>
+<li>Going to the main page of the repo in Github.</li>
+<li>Look for the SSH clone URL below the right side bar and copy it. </li>
+<li>Return to git and type in the command <code>git clone SSH clone URL</code> in the<br>
+directory you want to place the repo in.<br>
+</li>
+</ul>
+</li>
+<li>
+<p>If you want to use someone else's work as the foundation for your work, you can use forking by:  </p>
+
+<ul>
+<li>Going to the main page of the repo that you want to use as a starting point<br>
+and click on fork at the top-right of the page. By forking this repo, you are<br>
+making a personal copy of it that you can make changes to.<br>
+</li>
+<li>After forking the repo, go to the main page of your personal copy of the repo<br>
+and copy the SSH clone URL below the right sidebar.<br>
+</li>
+<li>Go to git and type in the command <code>git clone SSH clone url here</code> and you now have the forked repo in git.<br>
+</li>
+</ul>
+</li>
+<li>
+<p>If you wish to offer the changes you made in your personal copy of the forked repo<br>
+to the owner of the original repo, you must:  </p>
+
+<ul>
+<li>Go to the main page of your forked copy of the repo in Github. </li>
+<li>Click the green button in the top left of the page, next to the branch button. </li>
+<li>A new page will open and you will see a button that reads "create pull request". Click the green button. </li>
+<li>You are given the option to write a comment and once you are done, click "create pull request" below the text box. </li>
+</ul>
+</li>
+</ul>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/leonardod8117">leonardod8117</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
