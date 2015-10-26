@@ -60,3 +60,6 @@ You should be typing _every single word_.  It is ok to refer to your notes, the 
 The best way to learn something is through repeated practice.  
 Feel free to **practice** all of these concepts on your own to understand them better.  
 Don't forget to use [Google](http://www.google.com) if you get stuck!
+
+
+<img src="http://bl.ocks.org/lqb2/raw/48e43ee11e8f5b00542a/forkit.gif" id="octocat" alt="" />
